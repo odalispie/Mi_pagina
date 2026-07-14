@@ -2,42 +2,46 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Mi Página XHTML Válida</title>
+    <title>Control de Calidad - Área de Selección</title>
 </head>
 <body>
 
     <div>
-        <h1>Panel de Gestión y Control de Calidad</h1>
+        <h1>Panel de Control de Calidad y Selección</h1>
 
         <p>
-            Este es el espacio para reportar cómo van saliendo los lotes cada día. 
-            Usamos el formato XHTML estricto para que la página sea ligera, cargue 
-            rápido y guarde los datos de las revisiones sin dar ningún problema.
+            Registro diario para el chequeo técnico de lotes. Use este espacio para 
+            reportar el estado de las capas, tiro y humedad antes de autorizar el empaque.
         </p>
 
         <div>
-            <img src="#" alt="Espacio reservado para el logotipo" />
+            <img src="logo_fabrica.png" alt="Logotipo oficial del área de control de calidad" />
         </div>
 
         <p>
-            Para más información sobre los estándares de desarrollo, puedes visitar el 
-            <a href="https://validator.w3.org/">Validador de la W3C</a>.
+            Recuerde que la estructura del reporte debe cumplir con los estándares de la 
+            <a href="https://validator.w3.org/">plataforma de validación de la W3C</a>.
         </p>
 
         <hr />
 
-        <form action="#" method="post">
+        <form action="procesar_lote.php" method="post">
             <div>
-                <h3>Formulario de Registro de Observaciones</h3>
+                <h3>Registro de Lote</h3>
                 
                 <p>
                     <label for="supervisor">Nombre del Supervisor:</label><br />
                     <input type="text" id="supervisor" name="supervisor" />
                 </p>
+
+                <p>
+                    <label for="lote">Código del Lote:</label><br />
+                    <input type="text" id="lote" name="lote" />
+                </p>
                 
                 <p>
-                    <label for="observaciones">Detalles u Observaciones del Lote:</label><br />
-                    <textarea id="observaciones" name="observaciones" rows="4" cols="40"></textarea>
+                    <label for="observaciones">Detalles del Chequeo Técnico (Humedad, tiro, consistencia):</label><br />
+                    <textarea id="observaciones" name="observaciones" rows="5" cols="45"></textarea>
                 </p>
                 
                 <p>
